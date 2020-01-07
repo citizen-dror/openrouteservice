@@ -1,0 +1,96 @@
+{
+	instructions {
+		"numerals": {
+			"1": "ראשון",
+			"2": "שני",
+			"3": "שלישי",
+			"4": "רביעי",
+			"5": "חמישי",
+			"6": "שישי",
+			"7": "שביעי",
+			"8": "שמיני",
+			"9": "תשיעי",
+			"10": "עשירי"
+		},
+		"directions": {
+			"north": "צפון",
+			"northeast": "צפון-מזרח",
+			"east": "מזרח",
+			"southeast": "דרום-מזרח",
+			"south": "דרום",
+			"southwest": "דרום-מערב",
+			"west": "מערב",
+			"northwest": "צפון-מזרח"
+		},
+		"turn_maneuvers": {
+			"left": "שמאלה",
+			"right": "ימינה",
+			"sharp_left": חדות שמאלה",
+			"sharp_right": "חדות ימינה",
+			"slight_left": "קלות שמאלה",
+			"slight_right": "קלות ימינה",
+			"straight": "ישר,
+			"uturn": "פניית פרסה"
+		},
+		"actions": {
+			"arrive": {
+           		 	"default": {
+		                "default": "הגעת ליעד",
+						"name": "הגעת ל {way_name}"
+                	},
+					"left": {
+						"default": "הגעת ליעד, משמאלך",
+						"name": "הגעת ל {way_name}, משמאלך"
+					},
+					"right": {
+						"default": "הגעת ליעד, מימנך",
+						"name": "הגעת ל {way_name}, מימנך"
+					},
+					"straight": {
+						"default": "הגעת ליעד,  מולך",
+						"name": "הגעת ל {way_name}, מולך"
+					}
+			},          
+			"depart": {
+				"default": {
+					"default": "סע {direction}",
+					"name": "סע {direction} ב {way_name}"
+				}
+			},
+			"roundabout": {
+				"default": {
+					"exit": {
+						"default": "כנס למעגל התנועה וצא ביציאה {exit_number}",
+						"name": "כנס למעגל התנועה וצא ביציאה {exit_number} אל {way_name}"
+					},
+					"default": {
+						"default": "כנס למעגל התנועה",
+						"name": "כנס למעגל התנועה וצא אל {way_name}"
+					}
+				}
+			},
+			"turn": {
+				"default": {
+					"default": "פנה {turn_maneuver}",
+					"name": "פנה {turn_maneuver} אל {way_name}",
+				},
+			},
+			"continue": {
+				"default": {
+					"default": "המשך {turn_maneuver}",
+					"name": "המשך {turn_maneuver} ב {way_name}"
+				},
+				"uturn": {
+					"default": "פנה פניית פרסה",
+					"name": "פנה פניית פרסה אל {way_name}"
+				}
+			}
+			"keep": {
+				"default": {
+					"default": "המשך {turn_maneuver}",
+					"name": "המשך {turn_maneuver} אל {way_name}"
+				},
+			}
+		}
+	}
+}
